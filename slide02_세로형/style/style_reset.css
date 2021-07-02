@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* Reset Start */
+
+        * {
+            color: #222;
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a:link {
+            color: #333;
+        }
+
+        a:visited {
+            color: #333;
+        }
+
+        a:hover {
+            color: #444;
+        }
+
+        a:active {
+            color: #555;
+        }
+
+
+        .flexContainer {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+        }
+
+        /*
+        body{ 생략 }
+        img{ 생략 }
+        */
+
+        /* Reset End */

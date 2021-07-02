@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@import url(style_reset.css);
+
+h1{
+    width: 1300px;
+    text-align: center;
+    margin: 140px auto;
+}
+
+div#wrap{
+    width: 1300px;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #000;
+}
+
+div#slide{
+    width: 1200px;
+    height: 300px;
+    /*  border: 4px solid #08f;*/
+    margin: 0 auto;
+
+    overflow: hidden;
+}
+/* 슬라이드쇼 최상위 요소이자 #shuttleFrame의 부모요소
+    이미지 한개의 크기 */
+
+div#shuttleFrame{
+    width: 1200px;
+    height: 900px;
+    /*border: 4px solid #f80;*/
+
+}
+#shuttleFrame a{
+    /* img 요소와 span요소를 자식요소로 갖고 잇는
+    a요소의 폭과 높이를 이미지를 크기만큼 적용해야 함\
+    width+height+div-> span요 텍스트가 가운데로 정렬됨*/
+
+    width: 1200px;
+    height: 300px;
+    display: inline-block;
+    position: relative;
+}
+/* 실제 슬라이드 애니메이션을 담당하는 요소
+    이미지 모든 크기의 합산(가로형은 폭의 합산, 세로형은 높이의 합산*/
+
+
+#slide #shuttleFrame a span{
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    /*border: 4px solid rgba(170, 170, 170, 0.7);*/
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
